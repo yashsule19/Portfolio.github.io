@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv = "X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio Website</title>
+	<link rel= "stylesheet" href = "style.css">
+	
+	<!-- Boxicons Link -->
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	
+	<!--Remixicon Link-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"/>
+	
+	<!-- Google Font Link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+	<!-- Header-->
+	<header>
+		<a class="logo" onclick="scrollToSection('home',300,80)"><span>P</span>ortfolio</a>
+		
+		<ul class="navlist">
+			<li><a onclick="scrollToSection('home',300,80)">Home</a></li>
+			<li><a onclick="scrollToSection('about',100,80)">About Me</a></li>
+			<li><a onclick="scrollToSection('service',100,80)">Services</a></li>
+			<li><a onclick="scrollToSection('project',100,80)">Projects</a></li>
+			<li><a onclick="scrollToSection('certificate',100,80)">Certificates</a></li>
+			<li><a onclick="scrollToSection('contact',100,80)">Contact Me</a></li>
+		</ul>
+
+		<div class="nav-right">
+			<div class="bx bx-menu" id="menu-icon"></div>
+		</div>	
+	</header>
+	
+	<!-- Home-->
+	<section class="home">
+		<div class="home-text" id="home">
+			<h3>Data Analyst</h3>
+			<h1>Yash Sule</h1>
+			<p>I'm a here to turn your complex data into actionable insights and provide solutions to your business problems. Design visually appealing dashboards.</p>
+		</div>
+		
+		<div class="home-img">
+			<img src="profile.png">
+		</div>
+	</section>
+	
+	<!-- About section-->
+	<section class="about">
+		<div class="about" id="about">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="profile.png">
+				</div>
+				<div class="about-col-2">
+					<h1 class="sub-title"> About Me</h1>
+					<p> Versatile professional with a Data Science master's from Nottingham Trent University and a background as a Teaching Assistant in Applied Mathematics. Proven track record in guiding students, translating complex data into actionable insights, and contributing to impactful research. Skilled in advanced statistical methods and data visualization. Known for meticulous problem-solving and a commitment to driving innovation.</p>
+					
+					<div class="tab-titles">
+						<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+						<p class="tab-links" onclick="opentab('experience')">Experience</p>
+						<p class="tab-links" onclick="opentab('education')">Education</p>
+					</div>
+					<div class="tab-contents active-tab" id="skills">
+						<ul>
+							<li><span>Data Analysis and Interpretation</span><br>Analysing data and interpreting outcomes to achieve business goals.</li>
+							<li><span>Statistical Analysis</span><br>Generating KPI's using statistical methodology.</li>
+							<li><span>Programming Languages</span><br>Python, R, SQL, MATLAB.</li>
+							<li><span>Data Visualization Tool</span><br>PowerBI.</li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="experience">
+						<ul>
+							<li><span>May 2023 - Jul 2023</span><br>Research Associate at Nottingham Trent University.</li>
+							<li><span>Jul 2022 - Feb 2023</span><br>Data Analyst at OrcaloHolding Ltd.</li>
+							<li><span>Feb 2014 - Jul 2021</span><br>Teaching Assistant at The Maharaja Sayajirao University of Baroda.</li>
+							<li><span>Jul 2013 - Feb 2014</span><br>Associate Professor at Babaria Institute of Technology.</li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="education">
+						<ul>
+							<li><span>Sep 2021 - Sep 2023</span><br>M.Sc. in Data Science (Sandwich) from Nottingham Trent University.</li>
+							<li><span>Jul 2011 - Apr 2013</span><br>M.Sc. in Industrial / Applied Mathematics from The Maharaja Sayajirao University of Baroda.</li>
+							<li><span>Jul 2008 - Apr 2011</span><br>B.Sc. in Mathematics from The Maharaja Sayajirao University of Baroda.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Services section-->
+	<section class="service">
+		<div class="service" id="service">
+			<h1 class="sub-title"> Services</h1>
+			<div class="service-list">
+				<div>
+					<i class='bx bxl-python'></i>
+					<h2>Title of the Service-1</h2>
+					<p>Description of the Service-1</p>
+					<a href="#">Learn More</a>
+				</div>
+				<div>
+					<i class='bx bxl-python'></i>
+					<h2>Title of the Service-2</h2>
+					<p>Description of the Service-2</p>
+					<a href="#">Learn More</a>
+				</div>
+				<div>
+					<i class='bx bxl-python'></i>
+					<h2>Title of the Service-3</h2>
+					<p>Description of the Service-3</p>
+					<a href="#">Learn More</a>
+				</div>
+			</div>
+		</div>	
+	</section>
+	
+	<!-- Projets section-->
+	<section class="project">
+		<div class="project" id="project">
+			<h1 class="sub-title"> Projects</h1>
+			<div class="project-list">
+				<div class="list">
+					<img src="proj-1.png">
+					<div class="layer">
+						<h3>Title of the Project-1</h3>
+						<p>Short Introduction of Project-1</p>
+						<a href="#"><i class='bx bx-link-external'></i></a>
+					</div>
+				</div>
+				<div class="list">
+					<img src="proj-2.png">
+					<div class="layer">
+						<h3>Title of the Project-2</h3>
+						<p>Short Introduction of Project-2</p>
+						<a href="#"><i class='bx bx-link-external'></i></a>
+					</div>
+				</div>
+				<div class="list">
+					<img src="proj-3.png">
+					<div class="layer">
+						<h3>Title of the Project-3</h3>
+						<p>Short Introduction of Project-3</p>
+						<a href="#"><i class='bx bx-link-external'></i></a>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+	
+	
+	<!-- Certificates section-->
+	<section class="certificate">
+		<div class="certificate" id="certificate">
+			<h1 class="sub-title"> Certificates</h1>
+			<div class="certificate-list">
+				<div class="list">
+					<img src="cert-1.png">
+				</div>
+				<div class="list">
+					<img src="cert-2.png">
+				</div>
+				<div class="list">
+					<img src="cert-3.png">
+				</div>
+			</div>	
+		</div>
+	</section>
+	
+	<!-- Contact section-->
+	<section class="contact">
+		<div class="contact" id="contact">
+			<div class="row">
+				<div class="contact-left">
+					<h1 class="sub-title">Contact Me</h1>
+					<p><i class='bx bxl-gmail'></i> yashsulecan19@gmail.com</p>
+					<p><i class='bx bx-phone'></i> +44-7825545061</p>
+					<div class="social">
+						<a href="#"><i class='bx bxl-github' style='color:#ff7f50' ></i></a>  <!-- In place of # add the complete profile links-->
+						<a href="#"><i class='bx bxl-linkedin' style='color:#ff7f50' ></i></a>
+					</div>
+					<a href="Yash_Sule_CV.pdf" download class="btn">Download CV</a>
+				</div>
+				<div class="contact-right">
+					<form name="submit-to-google-sheet">
+						<input type="text" name="Name" placeholder="Your Name" required>
+						<input type="email" name="Email" placeholder="Your Email" required>
+						<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+						<button type="submit" class="btn">Submit</button>	
+					</form>
+					<span id="msg"></span>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Copyright -->
+	<section class="copyright">
+		<div class="copyright" id="copyright">
+			<p>Copyright @ Yash Sule.</p>
+		</div>
+	</section>
+	
+    <!-- Custom js file link-->
+	<script src="script.js"></script>
+
+</body>
+</html>
